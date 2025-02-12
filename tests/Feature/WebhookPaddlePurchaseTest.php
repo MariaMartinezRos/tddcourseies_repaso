@@ -78,7 +78,7 @@ it('does not dispatch a job for invalid paddle request', function () {
 
 function getValidPaddleWebhookRequest(): array
 {
-    $sigHeader = ['Paddle-Signature' => 'ts=1718139311;h1=8a46fdcc3c91acde3cf8c5b0a522ec6f3c7b42417adff9755c782ae2a7978fda'];
+    $sigHeader = ['Paddle-Signature' => 'ts=1718139311;h1=997b1888ca078f324919e636d35aac463ace151790d419d97c364d01235b7e21'];
 
     $parsedData = [
         'event_id' => 'evt_01jhqxaer8cjdkgrtdwmxz7spx',
