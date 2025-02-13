@@ -3,6 +3,7 @@
 namespace App\Http\Livewire;
 
 use App\Models\Video;
+use Illuminate\Support\Facades\Auth;
 use Livewire\Component;
 
 class VideoPlayer extends Component
@@ -11,7 +12,16 @@ class VideoPlayer extends Component
 
     public $courseVideos;
 
-    public function mount()
+//    protected $listeners = ['videoEnded' => 'markAsWatched'];
+//
+//    public function markAsWatched(): void
+//    {
+//        $user = Auth::user();
+//        $user->watchedVideos()->attach($this->video->id);
+//        $this->emit('videoWatched', $this->video->id);
+//    }
+
+    public function mount(): void
     {
         $this->courseVideos = $this->video->course->videos;
     }

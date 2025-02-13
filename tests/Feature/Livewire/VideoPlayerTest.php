@@ -3,6 +3,7 @@
 use App\Http\Livewire\VideoPlayer;
 use App\Models\Course;
 use App\Models\Video;
+use Livewire\Livewire;
 
 function createCourseAndVideos(int $videosCount = 1): Course
 {
